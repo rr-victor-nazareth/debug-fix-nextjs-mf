@@ -1,11 +1,14 @@
+import * as React from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+const TestReact = React.lazy(() => import('testproducer/TestReact'));
+
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Head>
@@ -16,6 +19,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
+          <TestReact />
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>
@@ -112,3 +116,9 @@ export default function Home() {
     </>
   )
 }
+
+Home.getInitialProps = () => {
+  return {};
+}
+
+export default Home;
