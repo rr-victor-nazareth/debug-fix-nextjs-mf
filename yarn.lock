@@ -179,7 +179,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@module-federation/enhanced@npm:0.8.6":
+"@module-federation/enhanced@npm:0.8.6, @module-federation/enhanced@npm:^0.8.6":
   version: 0.8.6
   resolution: "@module-federation/enhanced@npm:0.8.6"
   dependencies:
@@ -262,7 +262,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@module-federation/node@npm:2.6.19":
+"@module-federation/node@npm:2.6.19, @module-federation/node@npm:^2.6.19":
   version: 2.6.19
   resolution: "@module-federation/node@npm:2.6.19"
   dependencies:
@@ -1465,7 +1465,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "debug-fix-nextjs-mf@workspace:."
   dependencies:
+    "@module-federation/enhanced": "npm:^0.8.6"
     "@module-federation/nextjs-mf": "npm:^8.8.9"
+    "@module-federation/node": "npm:^2.6.19"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
     "@types/react-dom": "npm:^18"
